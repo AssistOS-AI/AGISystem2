@@ -107,8 +107,10 @@
               </p>
               <p>
                 In short, <a href="mrp-vm-implementation-path.html">MRP-VM</a> is the runtime we are building for
-                goals, frames, routes, plugins, and auditable execution. It is meant to provide the control layer that
-                current AI systems usually lack when they rely too heavily on generic model continuation alone.
+                goals, frames, routes, interpreters, and auditable execution. It is meant to provide the control layer
+                that current AI systems usually lack when they rely too heavily on generic model continuation alone. In
+                that picture, MRP-VM behaves as a machine for orchestrating interpreters: some internal, some
+                external, all governed through one explicit runtime.
               </p>
               <p>
                 The ambition is direct. We want AI that moves closer to ordinary computers, becomes more dependable for
@@ -241,7 +243,7 @@
                     <h3>MRP-VM: An Implementation Path</h3>
                     <p>
                       Presents the implementation roadmap for MRP-VM as a staged runtime over goals, seeds, bounded
-                      frames, regime plugins, and auditable epoch-based execution.
+                      frames, regime interpreters, and auditable epoch-based execution.
                     </p>
                     <div class="article-note">Architecture and implementation. Published March 19, 2026.</div>
                   </a>
@@ -355,7 +357,7 @@
                 <tbody>
                   <tr>
                     <td>MRP-VM Kernel</td>
-                    <td>Goals, frames, routes, plugins, epochs, provenance, and auditable runtime control.</td>
+                    <td>Goals, frames, routes, interpreters, epochs, provenance, and auditable runtime control.</td>
                     <td>A concrete scientific and engineering object for the whole program.</td>
                   </tr>
                   <tr>

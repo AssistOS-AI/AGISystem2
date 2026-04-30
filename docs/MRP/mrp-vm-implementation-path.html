@@ -87,9 +87,9 @@
               </a>
             </li>
             <li>
-              <a href="#plugins" data-step="04">
+              <a href="#interpreters" data-step="04">
                 <span class="toc-badge">04</span>
-                Plugins and Regimes
+                Interpreters and Regimes
               </a>
             </li>
             <li>
@@ -138,7 +138,8 @@
                 A practical implementation can stay simple at first if it preserves a few stable objects. A
                 <em>goal</em> condenses the request into a small control nucleus. A <em>seed</em> proposes a local line
                 of attack. A <em>focus</em> records the bounded support currently activated around that seed. A
-                <em>frame</em> is the first delegable object: a local problem explicit enough to be sent to a plugin. A
+                <em>frame</em> is the first delegable object: a local problem explicit enough to be sent to an
+                interpreter. A
                 <em>route</em> expresses candidate execution regimes, and a <em>result</em> returns a locally justified
                 effect.
               </p>
@@ -166,20 +167,22 @@
               </p>
             </section>
 
-            <section id="plugins">
-              <h2>Plugins and Regime Selection</h2>
+            <section id="interpreters">
+              <h2>Interpreters and Regime Selection</h2>
               <p>
-                MRP-VM becomes useful once frames can be routed to distinct execution regimes. A symbolic plugin can
-                handle satisfiability and constraint checking [DEMOURA-2008]. Structural plugins can navigate relations,
-                clusters, graph neighborhoods, or rule-like patterns. LLM-assisted plugins can still be used, but mainly
-                for decomposition, clarification, fallback interpretation, and local synthesis rather than for universal
-                certification [ANT-CTX-2025].
+                MRP-VM becomes useful once frames can be routed to distinct execution regimes. A symbolic interpreter
+                can handle satisfiability and constraint checking [DEMOURA-2008]. Structural interpreters can navigate
+                relations, clusters, graph neighborhoods, or rule-like patterns. Natural-language interpreters, often
+                LLM-assisted, can still be used, but mainly for decomposition, clarification, fallback interpretation,
+                and local synthesis rather than for universal certification [ANT-CTX-2025].
               </p>
               <p>
-                The key design decision is that plugins are characterized by what kind of reduction they apply to a
-                frame, not by one preferred technology. A plugin may internally use solvers, abstract interpretation,
-                symbolic execution, graph procedures, or model calls [COUSOT-1977] [CADAR-2013]. What matters is that it
-                returns reintegrable results with explicit justification.
+                The key design decision is that interpreters are characterized by what kind of reduction they apply to
+                a frame, not by one preferred technology. An interpreter may internally use solvers, abstract
+                interpretation, symbolic execution, graph procedures, or model calls [COUSOT-1977] [CADAR-2013]. Some
+                will be compiled into the VM as internal commands, while others will remain external execution
+                backends. What matters is that the VM can orchestrate them under one auditable control model and
+                recover reintegrable results with explicit justification.
               </p>
             </section>
 
@@ -203,9 +206,9 @@
               <h2>A Realistic Implementation Path</h2>
               <p>
                 A first implementation should stay modest. Start with a small kernel that can condense requests, emit a
-                few seeds, maintain bounded focus objects, and route frames to a handful of plugins: symbolic,
-                structural, composition, and LLM-assisted fallback. Keep persistence narrow. Track provenance from the
-                beginning.
+                few seeds, maintain bounded focus objects, and route frames to a handful of interpreters: symbolic,
+                structural, compositional, and natural-language fallback. Keep persistence narrow. Track provenance from
+                the beginning.
               </p>
               <p>
                 The second step is not “make the model bigger,” but compile recurring patterns. Stable skill chains can
