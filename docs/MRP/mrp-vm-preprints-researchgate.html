@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en" data-default-section="overview">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#f7fbff" />
+    <meta
+      name="description"
+      content="Index of MRP-VM preprint papers published on ResearchGate, covering the whitepaper, interpreters, planners, and memory architecture."
+    />
+    <meta property="og:title" content="MRP-VM Preprints on ResearchGate — AGISystem2" />
+    <meta
+      property="og:description"
+      content="Preprint papers for MRP-VM published on ResearchGate: whitepaper, Advanced Reasoner, Document Scale Planner, and Human Like Reasoner."
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://agisystem2.com/MRP/mrp-vm-preprints-researchgate.html" />
+    <title>MRP-VM Preprints on ResearchGate — AGISystem2</title>
+    <link rel="stylesheet" href="mrp-page.css" />
+    <link rel="stylesheet" href="mrp-citation.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="shell">
+      <div class="topbar">
+        <div class="brand">
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <a href="../index.html">AGISystem2</a>
+            <span class="crumb-sep">/</span>
+            <a href="index.html">MRP</a>
+            <span class="crumb-sep">/</span>
+            <span class="crumb-current">MRP-VM Preprints on ResearchGate</span>
+          </nav>
+          <span>Meta Rational Pragmatics article</span>
+        </div>
+        <div id="site-top-links" data-active="mrp" data-basepath=".."></div>
+      </div>
+
+      <header class="hero">
+        <div class="kicker"><b>MRP Article 17</b> Preprint index</div>
+        <h1>MRP-VM Preprints on ResearchGate</h1>
+        <p class="subtitle">Preprint papers defining the MRP-VM architecture, interpreters, and execution model.</p>
+        <div class="meta-row">
+          <span class="meta-pill">Author: Sînică Alboaie</span>
+          <span class="meta-pill">Series: Meta Rational Pragmatics</span>
+          <span class="meta-pill">Focus: Preprint papers and theoretical proposals</span>
+        </div>
+        <div class="citation-box" data-citation-box data-citation-key="Alboaie-2026" data-doc-title="MRP-VM Preprints on ResearchGate">
+          <div class="citation-head">
+            <strong>Permalink & citation</strong>
+            <div class="citation-actions">
+              <button class="copy-button" type="button" data-copy-target="link">Copy link</button>
+              <button class="copy-button" type="button" data-copy-target="citation">Copy citation</button>
+            </div>
+          </div>
+          <a class="citation-link" data-doc-link href="#"></a>
+          <p class="citation-preview" data-citation-preview></p>
+          <span class="copy-status" data-copy-status aria-live="polite"></span>
+        </div>
+      </header>
+
+      <div class="layout" id="main">
+        <aside class="toc" aria-label="Article outline">
+          <header>
+            <strong>Outline</strong>
+            <span id="nav-readout">—</span>
+          </header>
+          <ul class="navlist">
+            <li>
+              <a href="#overview" data-step="01" aria-current="true">
+                <span class="toc-badge">01</span>
+                Overview
+              </a>
+            </li>
+            <li>
+              <a href="#whitepaper" data-step="02">
+                <span class="toc-badge">02</span>
+                MRP-VM WhitePaper
+              </a>
+            </li>
+            <li>
+              <a href="#advanced-reasoner" data-step="03">
+                <span class="toc-badge">03</span>
+                Advanced Reasoner
+              </a>
+            </li>
+            <li>
+              <a href="#document-planner" data-step="04">
+                <span class="toc-badge">04</span>
+                Document Scale Planner
+              </a>
+            </li>
+            <li>
+              <a href="#human-reasoner" data-step="05">
+                <span class="toc-badge">05</span>
+                Human Like Reasoner
+              </a>
+            </li>
+            <li>
+              <a href="#common-thread" data-step="06">
+                <span class="toc-badge">06</span>
+                Common Thread
+              </a>
+            </li>
+          </ul>
+        </aside>
+
+        <main class="stack">
+          <article class="article">
+            <section id="overview">
+              <h2>Overview</h2>
+              <p>
+                The MRP-VM research program has produced a series of preprint papers published on ResearchGate.
+                These papers move from the core virtual-machine architecture to concrete external interpreters
+                that handle reasoning, document-scale planning, and human-scale problem solving.
+              </p>
+              <p>
+                Each paper defines a distinct layer of the system while sharing the same foundational discipline:
+                natural-language-derived work must execute through inspectable interpreters, explicit state,
+                validation steps, traceable outputs, and controlled stopping. The papers below are listed in
+                the order they build upon each other, from the architecture down to the interpreter level.
+              </p>
+              <div class="callout">
+                <b>Note:</b> All papers are preprints available on ResearchGate. They represent active theoretical
+                proposals and initial implementations (TRL-3). The open-source prototype is available at
+                <a href="https://github.com/AssistOS-AI/mrp-vm-v0" target="_blank" rel="noopener">github.com/AssistOS-AI/mrp-vm-v0</a>.
+              </div>
+            </section>
+
+            <section id="whitepaper">
+              <h2>01 — MRP-VM WhitePaper</h2>
+              <p class="paper-meta">
+                <strong>MRP-VM WhitePaper: A Meta-Rational Pragmatic Virtual Machine for Executable Natural-Language-Derived Programs</strong><br />
+                Version 0.5 · April 2026
+              </p>
+              <p>
+                <a href="https://www.researchgate.net/publication/404284883_MRP-VM_WhitePaper_A_Meta-Rational_Pragmatic_Virtual_Machine_for_Executable_Natural-Language-Derived_Programs" target="_blank" rel="noopener">
+                  Read on ResearchGate →
+                </a>
+              </p>
+              <p>
+                The foundational paper. It presents MRP-VM as a virtual-machine architecture for explainable
+                agentic AI, transforming natural-language tasks into executable intermediate programs whose
+                structure, state, interpreter calls, validation steps, repair operations, and memory effects
+                can be inspected.
+              </p>
+              <p>
+                The paper introduces <strong>SOP Lang IR</strong> as the intermediate representation: executable
+                work is expressed as declarations with explicit references, plural execution, fallback paths,
+                validation frames, and repair frames. Interpreters function as the operational instruction set
+                of the VM — LLMs, symbolic evaluators, retrieval systems, theorem provers, constraint solvers,
+                code executors, validators, and planners all become callable operations with declared input/output
+                contracts, policy constraints, and trace obligations.
+              </p>
+              <p>
+                Key architectural elements include versioned variables, authoritative runtime effects, a native
+                command surface, external interpreter wrappers, a knowledge environment, request bootstrapping
+                and planning modes, a runtime transition model with graph compilation and executable frontiers,
+                effect buffering and epoch transitions, and a repair/promotion/traceability layer. The paper
+                positions MRP-VM alongside DAG workflow systems, HTN/PDDL planning, Behavior Trees, durable
+                workflow engines, and multi-agent frameworks.
+              </p>
+            </section>
+
+            <section id="advanced-reasoner">
+              <h2>02 — Advanced Reasoner for MRP-VM</h2>
+              <p class="paper-meta">
+                <strong>Advanced Reasoner for MRP-VM: A Risk-Aware Meta-Reasoning Interpreter</strong><br />
+                Version 0.2 · May 2026 · Status: Initial Implementation (TRL-3)
+              </p>
+              <p>
+                <a href="https://www.researchgate.net/publication/404296617_Human_Like_Reasoner_for_MRP-VM" target="_blank" rel="noopener">
+                  Read on ResearchGate →
+                </a>
+              </p>
+              <p>
+                AdvancedReasoner is an external interpreter for MRP-VM designed for reasoning tasks that exceed
+                the finite symbolic profile of HumanLikeReasoner. It covers abductive, probabilistic, causal,
+                argumentation-based, belief revision, legal, scientific synthesis, optimization, formal proof,
+                SMT, pragmatic interpretation, analogical, ethical deliberation, and creative evaluation reasoning.
+              </p>
+              <p>
+                Its role is not to become a universal solver. It constructs typed internal models, executes the
+                locally supported part of the reasoning process, reduces finite fragments to bounded solvers,
+                estimates epistemic quality, and returns a structured response with certainty, evidence quality,
+                assumptions, open questions, and engine recommendations when a stronger specialized engine is
+                required.
+              </p>
+              <p>
+                The central design discipline is separation of layers: the MRP-VM wrapper resolves SOP references,
+                selects relevant Knowledge Units, constructs the prompt, validates generated code, executes the
+                sandbox, and renders the result into SOP surfaces. The generated JavaScript program uses
+                ExecutionContext only as local working memory and terminates by returning a ReasonerResponse.
+              </p>
+            </section>
+
+            <section id="document-planner">
+              <h2>03 — Document Scale Planner for MRP-VM</h2>
+              <p class="paper-meta">
+                <strong>Document Scale Planner for MRP-VM: Explicit Chunk-Pipeline Planning for Large Markdown and JSON Documents</strong><br />
+                Version 0.3 · May 2026 · Status: Initial Implementation (TRL-3)
+              </p>
+              <p>
+                <a href="https://www.researchgate.net/publication/404343092_Document_Scale_Planner_for_MRP-VM_Explicit_Chunk-Pipeline_Planning_for_Large_Markdown_and_JSON_Documents" target="_blank" rel="noopener">
+                  Read on ResearchGate →
+                </a>
+              </p>
+              <p>
+                DocumentScalePlanner is an external interpreter for MRP-VM that generates concrete SOP Lang
+                execution plans for large normalized documents. It transforms a large document-processing
+                request into an executable graph: parsing normalized document structure, creating stable chunk
+                identifiers, materializing each chunk as an explicit SOP variable, instantiating per-chunk
+                processing declarations, and composing results through explicit aggregation variables.
+              </p>
+              <p>
+                The interpreter supports document-scale tasks such as chapter review, claim extraction, idea
+                mining, evidence table construction, contradiction mapping, citation checking, table
+                normalization, and hierarchical synthesis. Semantic operations — summarization, idea extraction,
+                weak-argument detection, topic labeling, selective expansion — are represented as SOP declarations
+                attached to explicit chunks. This keeps large-document processing inspectable, resumable,
+                selectively repairable, and compatible with the MRP-VM execution model.
+              </p>
+            </section>
+
+            <section id="human-reasoner">
+              <h2>04 — Human Like Reasoner for MRP-VM</h2>
+              <p class="paper-meta">
+                <strong>Human Like Reasoner for MRP-VM: A Bounded Interpreter for Human-Scale Reasoning</strong><br />
+                Version 0.2 · May 2026
+              </p>
+              <p>
+                <a href="https://www.researchgate.net/publication/404556521_Explainable_Memory_An_Aspect-Oriented_Alternative_to_RAG-style_Context_Construction_for_Trustworthy_AI" target="_blank" rel="noopener">
+                  Read on ResearchGate →
+                </a>
+              </p>
+              <p>
+                HumanLikeReasoner is an external interpreter for MRP-VM designed to solve finite and moderate
+                reasoning problems whose structure resembles the way competent humans solve problems with
+                attention, scratch work, and local symbolic manipulation. It is not a single solver — it is
+                a small reasoning runtime that executes a restricted JavaScript-like SolverProgram generated
+                from natural language.
+              </p>
+              <p>
+                The generated program may instantiate several reasoning classes — RuleProblem, ConstraintProblem,
+                OrderProblem, GraphProblem, SearchProblem, NumericProblem, SetProblem, TemporalProblem,
+                SpatialProblem, TableProblem, CaseAnalysisProblem — store intermediate results, combine them
+                through explicit working memory, and construct a final natural-language answer. The LLM writes
+                an orchestration program that uses the appropriate local solver for each part. The program is
+                validated by PreflightAnalyzer, executed in a restricted runtime, and emitted back as
+                SOP-compatible variable content with metadata and trace.
+              </p>
+            </section>
+
+            <section id="common-thread">
+              <h2>Common Thread</h2>
+              <p>
+                All four papers share the same architectural discipline. Natural language is not treated as a
+                programming language with fixed operational semantics. It is treated as a pragmatic medium from
+                which executable frames can be derived, inspected, validated, repaired, and traced.
+              </p>
+              <p>
+                The WhitePaper defines the machine. AdvancedReasoner extends the reasoning horizon beyond finite
+                symbolic problems. DocumentScalePlanner makes large-document processing an explicit graph
+                operation. HumanLikeReasoner provides a bounded interpreter for compositional human-scale
+                reasoning. Together they form the first coherent layer of MRP-VM as an explainable agentic
+                runtime.
+              </p>
+              <p>
+                All work was supported in part by the European Research Project Achilles
+                (Grant Agreement No. 101189689). More information at
+                <a href="https://www.achilles-project.eu/" target="_blank" rel="noopener">achilles-project.eu</a>.
+              </p>
+            </section>
+          </article>
+        </main>
+      </div>
+
+      <div id="site-footer" data-type="mrp" data-basepath=".."></div>
+    </div>
+
+    <script src="mrp-outline.js"></script>
+    <script src="mrp-citation.js"></script>
+    <script src="../widgets/layout.js"></script>
+  </body>
+</html>
