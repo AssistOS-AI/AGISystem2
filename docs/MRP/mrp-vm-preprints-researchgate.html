@@ -93,9 +93,9 @@
               </a>
             </li>
             <li>
-              <a href="#human-reasoner" data-step="05">
+              <a href="#explainable-memory" data-step="05">
                 <span class="toc-badge">05</span>
-                Human Like Reasoner
+                Explainable Memory
               </a>
             </li>
             <li>
@@ -224,11 +224,11 @@
               </p>
             </section>
 
-            <section id="human-reasoner">
-              <h2>04 — Human Like Reasoner for MRP-VM</h2>
+            <section id="explainable-memory">
+              <h2>04 — Explainable Memory</h2>
               <p class="paper-meta">
-                <strong>Human Like Reasoner for MRP-VM: A Bounded Interpreter for Human-Scale Reasoning</strong><br />
-                Version 0.2 · May 2026
+                <strong>Explainable Memory: An Aspect-Oriented Alternative to RAG-style Context Construction for Trustworthy AI</strong><br />
+                Version 0.1 · May 2026 · Status: Initial Proposal
               </p>
               <p>
                 <a href="https://www.researchgate.net/publication/404556521_Explainable_Memory_An_Aspect-Oriented_Alternative_to_RAG-style_Context_Construction_for_Trustworthy_AI" target="_blank" rel="noopener">
@@ -236,20 +236,25 @@
                 </a>
               </p>
               <p>
-                HumanLikeReasoner is an external interpreter for MRP-VM designed to solve finite and moderate
-                reasoning problems whose structure resembles the way competent humans solve problems with
-                attention, scratch work, and local symbolic manipulation. It is not a single solver — it is
-                a small reasoning runtime that executes a restricted JavaScript-like SolverProgram generated
-                from natural language.
+                Explainable Memory is an aspect-oriented architecture for governed context construction over
+                Knowledge Units. A Knowledge Unit is any stable and addressable unit of knowledge — a document,
+                fragment, transcript, structured record, generated note, or source excerpt — independently of
+                its storage representation.
               </p>
               <p>
-                The generated program may instantiate several reasoning classes — RuleProblem, ConstraintProblem,
-                OrderProblem, GraphProblem, SearchProblem, NumericProblem, SetProblem, TemporalProblem,
-                SpatialProblem, TableProblem, CaseAnalysisProblem — store intermediate results, combine them
-                through explicit working memory, and construct a final natural-language answer. The LLM writes
-                an orchestration program that uses the appropriate local solver for each part. The program is
-                validated by PreflightAnalyzer, executed in a restricted runtime, and emitted back as
-                SOP-compatible variable content with metadata and trace.
+                The architecture indexes Knowledge Units through explicit aspects. An aspect is not merely a
+                tag — it is an approved interpretive axis associated with an aspect interpretation protocol:
+                a definition, inclusion criteria, exclusion criteria, and instructions for positioning Knowledge
+                Units from that perspective. Aspects may be ontological, epistemological, axiological,
+                operational, or bias-oriented.
+              </p>
+              <p>
+                The main method, <code>queryRelevant</code>, returns a task-oriented context string rather
+                than a raw ranked list. Each selected Knowledge Unit is accompanied by an indication of its
+                expected role, and each indication ends with an executable reference of the form
+                <code>~idKU</code>. The article positions this as an alternative to RAG-style context
+                construction for settings where explainability, auditability, governance, and bias-aware
+                retrieval matter.
               </p>
             </section>
 
@@ -263,9 +268,9 @@
               <p>
                 The WhitePaper defines the machine. AdvancedReasoner extends the reasoning horizon beyond finite
                 symbolic problems. DocumentScalePlanner makes large-document processing an explicit graph
-                operation. HumanLikeReasoner provides a bounded interpreter for compositional human-scale
-                reasoning. Together they form the first coherent layer of MRP-VM as an explainable agentic
-                runtime.
+                operation. ExplainableMemory replaces opaque RAG retrieval with aspect-governed, auditable
+                context construction. Together they form the first coherent layer of MRP-VM as an explainable
+                agentic runtime.
               </p>
               <p>
                 All work was supported in part by the European Research Project Achilles
