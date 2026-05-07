@@ -12,7 +12,7 @@
     <meta property="og:title" content="MRP-VM Preprints on ResearchGate — AGISystem2" />
     <meta
       property="og:description"
-      content="Preprint papers for MRP-VM published on ResearchGate: whitepaper, Advanced Reasoner, Document Scale Planner, and Human Like Reasoner."
+      content="Preprint papers for MRP-VM published on ResearchGate: whitepaper, Human Like Reasoner, Document Scale Planner, and Explainable Memory."
     />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://agisystem2.com/MRP/mrp-vm-preprints-researchgate.html" />
@@ -81,9 +81,9 @@
               </a>
             </li>
             <li>
-              <a href="#advanced-reasoner" data-step="03">
+              <a href="#human-reasoner" data-step="03">
                 <span class="toc-badge">03</span>
-                Advanced Reasoner
+                Human Like Reasoner
               </a>
             </li>
             <li>
@@ -164,11 +164,11 @@
               </p>
             </section>
 
-            <section id="advanced-reasoner">
-              <h2>02 — Advanced Reasoner for MRP-VM</h2>
+            <section id="human-reasoner">
+              <h2>02 — Human Like Reasoner for MRP-VM</h2>
               <p class="paper-meta">
-                <strong>Advanced Reasoner for MRP-VM: A Risk-Aware Meta-Reasoning Interpreter</strong><br />
-                Version 0.2 · May 2026 · Status: Initial Implementation (TRL-3)
+                <strong>Human Like Reasoner for MRP-VM: A Bounded Interpreter for Human-Scale Reasoning</strong><br />
+                Version 0.2 · May 2026
               </p>
               <p>
                 <a href="https://www.researchgate.net/publication/404296617_Human_Like_Reasoner_for_MRP-VM" target="_blank" rel="noopener">
@@ -176,23 +176,26 @@
                 </a>
               </p>
               <p>
-                AdvancedReasoner is an external interpreter for MRP-VM designed for reasoning tasks that exceed
-                the finite symbolic profile of HumanLikeReasoner. It covers abductive, probabilistic, causal,
-                argumentation-based, belief revision, legal, scientific synthesis, optimization, formal proof,
-                SMT, pragmatic interpretation, analogical, ethical deliberation, and creative evaluation reasoning.
+                HumanLikeReasoner is an external interpreter for MRP-VM designed to solve finite and moderate
+                reasoning problems whose structure resembles the way competent humans solve problems with
+                attention, scratch work, and local symbolic manipulation. It is not a single solver — it is
+                a small reasoning runtime that executes a restricted JavaScript-like SolverProgram generated
+                from natural language.
               </p>
               <p>
-                Its role is not to become a universal solver. It constructs typed internal models, executes the
-                locally supported part of the reasoning process, reduces finite fragments to bounded solvers,
-                estimates epistemic quality, and returns a structured response with certainty, evidence quality,
-                assumptions, open questions, and engine recommendations when a stronger specialized engine is
-                required.
+                The generated program may instantiate several reasoning classes — RuleProblem, ConstraintProblem,
+                OrderProblem, GraphProblem, SearchProblem, NumericProblem, SetProblem, TemporalProblem,
+                SpatialProblem, TableProblem, CaseAnalysisProblem — store intermediate results, combine them
+                through explicit working memory, and construct a final natural-language answer. The LLM writes
+                an orchestration program that uses the appropriate local solver for each part. The program is
+                validated by PreflightAnalyzer, executed in a restricted runtime, and emitted back as
+                SOP-compatible variable content with metadata and trace.
               </p>
               <p>
-                The central design discipline is separation of layers: the MRP-VM wrapper resolves SOP references,
-                selects relevant Knowledge Units, constructs the prompt, validates generated code, executes the
-                sandbox, and renders the result into SOP surfaces. The generated JavaScript program uses
-                ExecutionContext only as local working memory and terminates by returning a ReasonerResponse.
+                The main design point is compositionality. A problem may require constraint solving, graph
+                reasoning, bounded arithmetic, set counting, temporal ordering, and final textual synthesis
+                inside one generated program. The interpreter supports this by providing an ExecutionContext,
+                finite control constructs, typed result objects, and leaf solver classes with small APIs.
               </p>
             </section>
 
@@ -266,11 +269,11 @@
                 which executable frames can be derived, inspected, validated, repaired, and traced.
               </p>
               <p>
-                The WhitePaper defines the machine. AdvancedReasoner extends the reasoning horizon beyond finite
-                symbolic problems. DocumentScalePlanner makes large-document processing an explicit graph
-                operation. ExplainableMemory replaces opaque RAG retrieval with aspect-governed, auditable
-                context construction. Together they form the first coherent layer of MRP-VM as an explainable
-                agentic runtime.
+                The WhitePaper defines the machine. HumanLikeReasoner provides a bounded interpreter for
+                compositional human-scale reasoning. DocumentScalePlanner makes large-document processing an
+                explicit graph operation. ExplainableMemory replaces opaque RAG retrieval with aspect-governed,
+                auditable context construction. Together they form the first coherent layer of MRP-VM as an
+                explainable agentic runtime.
               </p>
               <p>
                 All work was supported in part by the European Research Project Achilles
