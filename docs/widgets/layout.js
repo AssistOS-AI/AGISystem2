@@ -59,8 +59,7 @@
       const basepath = footerContainer.getAttribute("data-basepath") || ".";
       let html = '<footer>';
       
-      html += `<p>Research conducted by <a href="https://www.axiologic.net/" target="_blank" rel="noopener noreferrer">Axiologic Research</a> as part of the European research project <a href="https://www.achilles-project.eu/" target="_blank" rel="noopener noreferrer">Achilles</a>.</p>
-      <p>Commercialization partnership with <a href="https://lydiarx.com/" target="_blank" rel="noopener noreferrer">LydiaRX Venture Studio</a>.</p>`;
+      html += `<p>Research conducted by <a href="https://www.axiologic.net/" target="_blank" rel="noopener noreferrer">Axiologic Research</a> as part of the European research project <a href="https://www.achilles-project.eu/" target="_blank" rel="noopener noreferrer">Achilles</a>.</p>`;
 
       html += `<p class="disclaimer">Disclaimer: This documentation was generated with AI assistance (LLMs) and may contain errors or hallucinations.</p>`;
       html += `<p>&copy; Axiologic Research</p>`;

@@ -54,11 +54,9 @@ layout_js = """(function() {
         html += `<p>This research map is maintained as part of AGISystem2 and complements the <a href="${basepath}/MRP/index.html">Meta Rational Pragmatics</a> article series.</p>`;
       } else if (type === "ai-assisted") {
         html += `<p>Research conducted by <a href="https://www.axiologic.net/" target="_blank" rel="noopener noreferrer">Axiologic Research</a> as part of the European research project <a href="https://www.achilles-project.eu/" target="_blank" rel="noopener noreferrer">Achilles</a>.</p>
-      <p>Commercialization partnership with <a href="https://lydiarx.com/" target="_blank" rel="noopener noreferrer">LydiaRX Venture Studio</a>.</p>
       <p>This documentation was produced with AI assistance. Verify important claims by checking code, evaluation suites, tests, and cited sources directly.</p>`;
       } else {
-        html += `<p>Research conducted by <a href="https://www.axiologic.net/" target="_blank" rel="noopener noreferrer">Axiologic Research</a> within the European project <a href="https://www.achilles-project.eu/" target="_blank" rel="noopener noreferrer">Achilles</a>.</p>
-      <p>Commercialization partnership with <a href="https://lydiarx.com/" target="_blank" rel="noopener noreferrer">LydiaRX Venture Studio</a>.</p>`;
+        html += `<p>Research conducted by <a href="https://www.axiologic.net/" target="_blank" rel="noopener noreferrer">Axiologic Research</a> within the European project <a href="https://www.achilles-project.eu/" target="_blank" rel="noopener noreferrer">Achilles</a>.</p>`;
       }
       
       html += '</footer>';
